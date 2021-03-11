@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="tic.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="row justify-content-center">
+            <h1 class="col-12 display-1 text-center">Tic Tac Toe</h1>
+            <button id = "draw-btn" class="btn btn-primary col-1 h1 text-center mt-5 ">Play</button>
+            <button id ='reset-btn' class="btn btn-primary col-1 h1 text-center mt-5 ms-3">Reset</button>
+        </div>
+        
+        <div class="row row-cols-2  mt-5">
+            <section id="player-area " class = "col-6 text-center">
+                    <h2 class="display-4 ">Player</h2>
+                    <span class="display-4" id="player-score">0</span>
+            </section>
+
+            <section id="computer-area" class = "col-6 text-center">
+                    <h2 class="display-4 ">Computer</h2>
+                    <span class="display-4 " id="computer-score">0</span>
+            </section>
+        </div>
+        
+        <!-- TIC TAC TOE  BOARD-->
+        <div  class="container mt-5 mh-70">
+            <div id ="game-board" class="row row-cols-3 border-2">
+            </div>
+        </div>
+    </main>
+    <script src="tac.js"></script>
+</body>
+</html>
+
